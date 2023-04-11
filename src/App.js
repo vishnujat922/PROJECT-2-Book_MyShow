@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import LayOut from './Pages/LayOut';
+import Home from './Pages/Home';
+import SignIn from './Pages/SignIn';
+import SignUp from './Pages/SignUp';
+import NoPage from './Pages/NoPage';
+import MovieGrid from './Pages/MovieGrid';
+import MovieList from './Pages/MovieList';
+import MovieDetails from './Pages/MovieDetails';
+import MovieSeatPlan from './Pages/MovieSeatPlan';
+import MovieCheckout from './Pages/MovieCheckout';
+import Popcorn from './Pages/Popcorn';
+import MovieTicketPlan from './Pages/MovieTicketPlan';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LayOut />}> 
+            <Route index element={<Home />} />
+            <Route path='/movie-grid' element={<MovieGrid />} />
+            <Route path='/movie-list' element={<MovieList />} />
+            <Route path='/movie-details' element={<MovieDetails />} />
+            <Route path='/movie-ticket-plane' element={<MovieTicketPlan />} />
+            <Route path='/movie-seat-plane' element={<MovieSeatPlan />} />
+            <Route path='/movie-checkout' element={<MovieCheckout />} />
+            <Route path='/popcorn' element={<Popcorn />} />
+          </Route>
+          <Route path='/sign-in' element={<SignIn />} />
+          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='*' element={<NoPage />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
