@@ -4,7 +4,6 @@ import React from 'react'
 const MovieTicketPlan = () => {
   return (
     <>
-        
         <section className="window-warning inActive">
             <div className="lay" />
             <div className="warning-item">
@@ -16,7 +15,6 @@ const MovieTicketPlan = () => {
             <a href="movie-seat-plan.html" className="custom-button seatPlanButton">Seat Plans<i className="fas fa-angle-right" /></a>
             </div>
         </section>
-        
         <section className="details-banner hero-area bg_img" data-background="assets/images/banner/banner03.jpg">
             <div className="container">
             <div className="details-banner-wrapper">
@@ -32,7 +30,6 @@ const MovieTicketPlan = () => {
             </div>
             </div>
         </section>
-        
         <section className="book-section bg-one">
             <div className="container">
             <form className="ticket-search-form two">
@@ -95,7 +92,6 @@ const MovieTicketPlan = () => {
             </form>
             </div>
         </section>
-        
         <div className="ticket-plan-section padding-bottom padding-top">
             <div className="container">
             <div className="row justify-content-center">
@@ -271,8 +267,6 @@ const MovieTicketPlan = () => {
             </div>
             </div>
         </div>
-
-
     </>
   )
 }

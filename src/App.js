@@ -9,10 +9,11 @@ import NoPage from './Pages/NoPage';
 import MovieGrid from './Pages/MovieGrid';
 import MovieList from './Pages/MovieList';
 import MovieDetails from './Pages/MovieDetails';
+import MovieTicketPlan from './Pages/MovieTicketPlan'
 import MovieSeatPlan from './Pages/MovieSeatPlan';
 import MovieCheckout from './Pages/MovieCheckout';
 import Popcorn from './Pages/Popcorn';
-import MovieTicketPlan from './Pages/MovieTicketPlan';
+
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
             <Route path='/movie-grid' element={<MovieGrid />} />
             <Route path='/movie-list' element={<MovieList />} />
             <Route path='/movie-details' element={<MovieDetails />} />
-            <Route path='/movie-ticket-plane' element={<MovieTicketPlan />} />
-            <Route path='/movie-seat-plane' element={<MovieSeatPlan />} />
+            <Route path='/movie-ticket-plan' element={<MovieTicketPlan />} />
+            <Route path='/movie-seat-plan' element={<MovieSeatPlan />} />
             <Route path='/movie-checkout' element={<MovieCheckout />} />
             <Route path='/popcorn' element={<Popcorn />} />
           </Route>

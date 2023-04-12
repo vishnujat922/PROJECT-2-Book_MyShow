@@ -12,7 +12,7 @@ export default function Header() {
         <div className="container">
           <div className="header-wrapper">
             <div className="logo">
-              <a href="index.html">
+              <a href="/">
                 <img src="assets/images/logo/logo.png" alt="logo" />
               </a>
             </div>
